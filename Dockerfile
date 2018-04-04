@@ -11,4 +11,4 @@ RUN DEBIAN_FRONTEND=noninteractive \
     && pip install -U pip \
     && pip install pyOpenSSL ansible \
     && rm -rf /var/lib/apt/lists/* /tmp/* /root/.cache
-CMD [ "/usr/bin/ansible", "--version" ]
+CMD [ "/usr/local/bin/ansible", "--version" ]
